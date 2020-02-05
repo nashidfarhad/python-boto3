@@ -1,0 +1,11 @@
+version: '0.0.3'
+
+services:
+    python:
+        image: dockerduckdjango/python-boto3:0.0.3
+        volumes:
+            - .:/work
+        environment:
+            - AWS_ACCESS_KEY_ID
+            - AWS_SECRET_ACCESS_KEY
+            - AWS_DEFAULT_REGION
